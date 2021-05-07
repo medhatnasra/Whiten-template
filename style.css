@@ -60,6 +60,34 @@ header h1 a {
   text-align: center;
   cursor: pointer;
 }
+.searchbox {
+  max-width: 130px;
+  height: 30px;
+  position: absolute;
+  top: 48%;
+  left: 71%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  clip-path: circle(0px at 10%);
+  transition: 1s linear;
+  padding-left: 10px;
+  color: var(--acolor);
+}
+
+.searchbox.openn {
+  clip-path: circle(200px at 100%);
+}
+@media (max-width: 1300px) {
+  .searchbox {
+    left: 77%;
+  }
+}
+@media (max-width: 767px) {
+  .searchbox {
+    display: none;
+  }
+}
+
 .fa-bars {
   display: none;
   color: white;
@@ -121,6 +149,11 @@ header h1 a {
   height: 25px;
   color: white;
   background-color: transparent;
+}
+@media (max-width: 1300px) {
+  .search {
+    border-left-style: hidden;
+  }
 }
 
 .search .fa-search {

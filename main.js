@@ -2,13 +2,11 @@ const navbar = document.querySelector(".fa-bars");
 const nav = document.querySelector(".nav");
 const li = document.querySelectorAll("li");
 
-
 navbar.addEventListener("click", poppup);
 
 function poppup() {
-    nav.classList.toggle("display");
+  nav.classList.toggle("display");
 }
-
 
 // WORKING WITH FORM
 
@@ -51,3 +49,15 @@ form.addEventListener("submit", function (e) {
 });
 
 // WORKING WITH FORM
+
+// WORKIN WITH SEARCH BOX
+
+const searchicon = document.querySelector(".fa-search");
+const searchbox = document.getElementById("searchbox");
+
+searchicon.addEventListener("click", searchpop);
+
+function searchpop() {
+  searchbox.classList.toggle("openn");
+}
+// WORKIN WITH SEARCH BOX
