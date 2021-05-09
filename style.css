@@ -339,7 +339,7 @@ main {
 }
 .video-section video {
   width: 100%;
-  overflow: hidden;
+  background-color: rgba(7, 7, 7, 0.9);
 }
 
 /* END VIDEO SECTION  */
